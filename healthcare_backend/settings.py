@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/6.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
-
+from datetime import timedelta
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'accounts',
-    "patients",
+    "patient",
     "doctors",
     "mappings"
 ]
@@ -92,7 +92,15 @@ REST_FRAMEWORK = {
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ),
 }
+SIMPLE_JWT = {
 
+    "ACCESS_TOKEN_LIFETIME":
+        timedelta(minutes=30),
+
+    "REFRESH_TOKEN_LIFETIME":
+        timedelta(days=1),
+
+}
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
 
