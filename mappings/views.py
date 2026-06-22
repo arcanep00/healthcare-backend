@@ -1,4 +1,3 @@
-from doctors.models import Doctor
 from .models import PatientDoctorMapping
 from .serializers import PatientDoctorMappingSerializer, MappingReadSerializer
 from rest_framework import viewsets
@@ -9,7 +8,6 @@ from rest_framework.response import Response
 # Create your views here.
 
 class PatientDoctorMappingView(viewsets.ModelViewSet):
-    queryset = PatientDoctorMapping.objects.all()
 
     serializer_class = PatientDoctorMappingSerializer
 
