@@ -1,0 +1,70 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1280" y2="640">
+<stop stop-color="#0F172A"/>
+<stop offset="1" stop-color="#111827"/>
+</linearGradient>
+
+<linearGradient id="line" x1="0" y1="0" x2="1280" y2="0">
+<stop stop-color="#3B82F6"/>
+<stop offset="1" stop-color="#06B6D4"/>
+</linearGradient>
+</defs>
+
+<rect width="1280" height="640" fill="url(#bg)"/>
+
+<line x1="90" y1="110" x2="1190" y2="110"
+stroke="url(#line)"
+stroke-width="3"/>
+
+<line x1="90" y1="530" x2="1190" y2="530"
+stroke="url(#line)"
+stroke-width="3"/>
+
+<text
+x="100"
+y="220"
+fill="white"
+font-size="64"
+font-family="Segoe UI"
+font-weight="700">
+
+🏥 Healthcare Backend
+
+</text>
+
+<text
+x="100"
+y="300"
+fill="#94A3B8"
+font-size="30"
+font-family="Segoe UI">
+
+Scalable REST API built with Django REST Framework
+
+</text>
+
+<text
+x="100"
+y="370"
+fill="#60A5FA"
+font-size="28"
+font-family="JetBrains Mono">
+
+Django • DRF • PostgreSQL • JWT • Redis • Docker
+
+</text>
+
+<text
+x="100"
+y="470"
+fill="#E5E7EB"
+font-size="24"
+font-family="Segoe UI">
+
+github.com/arcanep00/healthcare-backend
+
+</text>
+
+</svg>
